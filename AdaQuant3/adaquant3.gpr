@@ -1,0 +1,25 @@
+with "../BasisSetManager/basis_set_manager.gpr";
+
+project AdaQuant3 is
+
+   for Source_Dirs use ("Source");
+   for Source_List_File use "Source/Source_List.txt";
+   for Object_Dir use "Build";
+   for Main use ("adaquant.adb");
+
+   package Naming is
+      for Casing use "MixedCase";
+   end Naming;
+
+   package Builder is
+      for Default_Switches ("ada") use ("-s", "-g");
+   end Builder;
+
+   package Compiler is
+      for Default_Switches ("ada") use ("-g", "-gnata", "-gnateE", "-gnatE", "-gnatwj", "-gnatwr", "-gnatwz", "-gnatwy", "-gnatye");
+   end Compiler;
+
+   for Exec_Dir use ".";
+
+end AdaQuant3;
+
