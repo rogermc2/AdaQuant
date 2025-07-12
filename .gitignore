@@ -1,0 +1,11 @@
+*.o
+*.ali
+*.DS_Store
+*.bexch
+b__*
+*.cswi
+*.stdout
+8.stderr
+manage_basis_set
+adaquant
+test_binomial
