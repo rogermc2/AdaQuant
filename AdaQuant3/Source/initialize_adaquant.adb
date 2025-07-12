@@ -83,7 +83,7 @@ package body Initialize_AdaQuant is
       Method       : tCalculation_Method;
    begin
       while Process = False and Count < Max_Count loop
-        Put_Line ("SCF Method: ");
+        Put_Line ("SCF Method (Undefined, RHF, UHF, DFT, MINDO3, UMINDO3): ");
         aLine := Text_IO.Get_Line;
         Line_Length := Length (aLine);
         If Line_Length < 7 then
