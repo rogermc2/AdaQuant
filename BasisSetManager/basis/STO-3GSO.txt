@@ -1,0 +1,17 @@
+#  STO-3G
+-- From Szabo and Ostlund
+-- BASIS "ao basis"
+-- BASIS SET: (3s) -> [1s]
+-- H from equation (3.225) Similar to EMSL
+-- He from ? Coefficients similar to EMSL, Exponents differ.
+--   Exponent                Coefficient
+H    S
+      3.425250               0.154329       
+      0.623913               0.535328       
+      0.168856               0.444635       
+#BASIS SET: (3s) -> [1s]
+He   S
+      9.75393                0.154329       
+      1.77669                0.535328      
+      0.480844               0.444635             
+END

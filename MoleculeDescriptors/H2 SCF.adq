@@ -1,0 +1,8 @@
+Name           H2
+atomlist
+H               0.0         0.0        0.0
+H               0.0         0.0        1.4
+end
+units          Bohr
+charge         0
+multiplicity   0

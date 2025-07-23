@@ -1,0 +1,25 @@
+
+           case Parameter  is
+              when NAME
+                    => Molecule.Name := Field;
+              when UNITS
+                    => If Field = "Bohr" then
+                          Molecule.Units := Bohr;
+                       elsif Field = "Angstrom" then
+                          Molecule.Units := Angstrom;
+                       else
+                          Error := eUnits_Error;
+                          Put_Line ("Parse_Descriptor_File, Invalid Units: "
+                                    & Field);
+                       end if;
+               when BASIS
+                    => Molecule.Basis_Name := Field;
+               when CHARGE
+                    => Get (To_String (Field), Molecule.Charge, Last);
+               when MULTIPLICITY
+                    => Get (To_String (Field), Molecule.Multiplicity, Last);
+               when ATOMLIST
+                    => Make_Atom_List (Descriptor_File, Molecule.Atom_List, Error);
+               when ENDLIST
+                    => Null;
+               end case;

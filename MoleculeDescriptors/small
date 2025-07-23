@@ -1,0 +1,8 @@
+Name           HeH+
+atomlist
+H               0.01       -0.02        0.03
+He              1.0         0.53        0.93
+end
+units          Bohr
+charge         1
+multiplicity   1

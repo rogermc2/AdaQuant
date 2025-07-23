@@ -1,0 +1,11 @@
+Name           CH4
+atomlist
+C               0.0         0.0         0.0
+H               0.0         0.0         0.10870     
+H               0.28        0.0        -0.036285
+H              -0.051233    0.088737   -0.036285
+H              -0.051233   -0.088737   -0.036285
+end
+units          Nanometre
+charge         0
+multiplicity   1
